@@ -1,10 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Trợ lý AI Vật lí</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trợ lý AI Giáo viên Vật lí</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+display:flex;
+height:100vh;
+background:#f3f6fb;
+}
+
+.sidebar{
+width:250px;
+background:#1565c0;
+color:white;
+padding:20px;
+}
+
+.sidebar h2{
+margin-bottom:25px;
+}
+
+.sidebar button{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+}
+
+.sidebar button:hover{
+background:#e3f2fd;
+color:#1565c0;
+}
+
+.content{
+flex:1;
+padding:30px;
+overflow:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+h1{
+margin-bottom:15px;
+color:#1565c0;
+}
+
+ul{
+padding-left:20px;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Xin chào!</h1>
-    <p>Đây là website Trợ lý AI Giáo viên Vật lí.</p>
+
+<div class="sidebar">
+
+<h2>🤖 AI Vật lí</h2>
+
+<button onclick="showPage('home')">🏠 Trang chủ</button>
+
+<button onclick="showPage('lesson')">📚 Soạn giáo án</button>
+
+<button onclick="showPage('question')">❓ Sinh câu hỏi</button>
+
+<button onclick="showPage('quiz')">📝 Trắc nghiệm</button>
+
+<button onclick="showPage('bank')">📂 Ngân hàng câu hỏi</button>
+
+</div>
+
+<div class="content">
+
+<div id="page">
+
+<div class="card">
+
+<h1>Trợ lý AI Giáo viên Vật lí</h1>
+
+<p>
+Hệ thống hỗ trợ giáo viên theo chương trình GDPT 2018.
+</p>
+
+<br>
+
+<ul>
+<li>Soạn giáo án bằng AI</li>
+<li>Sinh câu hỏi trắc nghiệm</li>
+<li>Tạo đề kiểm tra</li>
+<li>Ngân hàng câu hỏi</li>
+<li>Xuất Word và PDF</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function showPage(page){
+
+let html='';
+
+if(page==='home'){
+html=`
+<div class="card">
+<h1>🏠 Trang chủ</h1>
+<p>Chào mừng đến với Trợ lý AI Giáo viên Vật lí.</p>
+</div>
+`;
+}
+
+if(page==='lesson'){
+html=`
+<div class="card">
+<h1>📚 Soạn giáo án AI</h1>
+
+<label>Bài học:</label><br><br>
+
+<input
+style="width:100%;padding:10px"
+placeholder="Ví dụ: Chuyển động thẳng đều">
+
+<br><br>
+
+<button style="padding:10px">
+Tạo giáo án
+</button>
+
+</div>
+`;
+}
+
+if(page==='question'){
+html=`
+<div class="card">
+<h1>❓ Sinh câu hỏi AI</h1>
+
+<p>Chức năng sẽ kết nối AI ở tuần 3.</p>
+
+</div>
+`;
+}
+
+if(page==='quiz'){
+html=`
+<div class="card">
+<h1>📝 Trắc nghiệm</h1>
+
+<p>Tuần sau sẽ thêm ngân hàng câu hỏi và chấm điểm tự động.</p>
+
+</div>
+`;
+}
+
+if(page==='bank'){
+html=`
+<div class="card">
+<h1>📂 Ngân hàng câu hỏi</h1>
+
+<p>Danh sách câu hỏi sẽ được lưu tại đây.</p>
+
+</div>
+`;
+}
+
+document.getElementById('page').innerHTML=html;
+
+}
+
+</script>
+
 </body>
 </html>
