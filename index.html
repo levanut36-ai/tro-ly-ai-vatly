@@ -125,8 +125,54 @@ html=`
 if(page==='lesson'){
 html=`
 <div class="card">
+
 <h1>📚 Soạn giáo án AI</h1>
-<p>Chức năng sẽ được phát triển ở giai đoạn tiếp theo.</p>
+
+<p><b>Môn học</b></p>
+<select style="width:100%;padding:10px;margin-top:5px;">
+<option>Vật lí</option>
+</select>
+
+<br><br>
+
+<p><b>Lớp</b></p>
+<select style="width:100%;padding:10px;margin-top:5px;">
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+
+<br><br>
+
+<p><b>Tên bài học</b></p>
+
+<input
+type="text"
+placeholder="Ví dụ: Chuyển động thẳng đều"
+style="width:100%;padding:10px;">
+
+<br><br>
+
+<p><b>Số tiết</b></p>
+
+<input
+type="number"
+value="1"
+style="width:100%;padding:10px;">
+
+<br><br>
+
+<button
+style="
+padding:12px 20px;
+background:#1565c0;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;">
+🚀 Tạo giáo án
+</button>
+
 </div>`;
 }
 
