@@ -3,22 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Trợ lý AI Giáo viên Vật lí</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
 display:flex;
 height:100vh;
-background:#f3f6fb;
+background:#f0f4f8;
 }
 
 .sidebar{
@@ -29,7 +27,7 @@ padding:20px;
 }
 
 .sidebar h2{
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .sidebar button{
@@ -39,36 +37,29 @@ margin-bottom:10px;
 border:none;
 border-radius:8px;
 cursor:pointer;
-font-size:15px;
 }
 
 .sidebar button:hover{
-background:#e3f2fd;
+background:white;
 color:#1565c0;
 }
 
 .content{
 flex:1;
 padding:30px;
-overflow:auto;
 }
 
 .card{
 background:white;
 padding:25px;
 border-radius:12px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
 }
 
 h1{
 margin-bottom:15px;
 color:#1565c0;
 }
-
-ul{
-padding-left:20px;
-}
-
 </style>
 </head>
 
@@ -95,11 +86,10 @@ padding-left:20px;
 <div id="page">
 
 <div class="card">
-
 <h1>Trợ lý AI Giáo viên Vật lí</h1>
 
 <p>
-Hệ thống hỗ trợ giáo viên theo chương trình GDPT 2018.
+Hệ thống hỗ trợ giáo viên theo Chương trình GDPT 2018.
 </p>
 
 <br>
@@ -109,7 +99,7 @@ Hệ thống hỗ trợ giáo viên theo chương trình GDPT 2018.
 <li>Sinh câu hỏi trắc nghiệm</li>
 <li>Tạo đề kiểm tra</li>
 <li>Ngân hàng câu hỏi</li>
-<li>Xuất Word và PDF</li>
+<li>Xuất Word/PDF</li>
 </ul>
 
 </div>
@@ -129,62 +119,39 @@ html=`
 <div class="card">
 <h1>🏠 Trang chủ</h1>
 <p>Chào mừng đến với Trợ lý AI Giáo viên Vật lí.</p>
-</div>
-`;
+</div>`;
 }
 
 if(page==='lesson'){
 html=`
 <div class="card">
 <h1>📚 Soạn giáo án AI</h1>
-
-<label>Bài học:</label><br><br>
-
-<input
-style="width:100%;padding:10px"
-placeholder="Ví dụ: Chuyển động thẳng đều">
-
-<br><br>
-
-<button style="padding:10px">
-Tạo giáo án
-</button>
-
-</div>
-`;
+<p>Chức năng sẽ được phát triển ở giai đoạn tiếp theo.</p>
+</div>`;
 }
 
 if(page==='question'){
 html=`
 <div class="card">
 <h1>❓ Sinh câu hỏi AI</h1>
-
-<p>Chức năng sẽ kết nối AI ở tuần 3.</p>
-
-</div>
-`;
+<p>Chức năng sẽ được phát triển ở giai đoạn tiếp theo.</p>
+</div>`;
 }
 
 if(page==='quiz'){
 html=`
 <div class="card">
 <h1>📝 Trắc nghiệm</h1>
-
-<p>Tuần sau sẽ thêm ngân hàng câu hỏi và chấm điểm tự động.</p>
-
-</div>
-`;
+<p>Tuần tới sẽ bổ sung làm bài và chấm điểm tự động.</p>
+</div>`;
 }
 
 if(page==='bank'){
 html=`
 <div class="card">
 <h1>📂 Ngân hàng câu hỏi</h1>
-
-<p>Danh sách câu hỏi sẽ được lưu tại đây.</p>
-
-</div>
-`;
+<p>Nơi lưu trữ câu hỏi Vật lí.</p>
+</div>`;
 }
 
 document.getElementById('page').innerHTML=html;
