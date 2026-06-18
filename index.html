@@ -208,6 +208,7 @@ placeholder="Nhập yêu cầu cần đạt của bài học">
 <br><br>
 
 <button
+onclick="taoGiaoAn()"
 style="
 padding:12px 20px;
 background:#1565c0;
@@ -217,6 +218,8 @@ border-radius:8px;
 cursor:pointer;">
 🚀 Tạo giáo án
 </button>
+
+<div id="ketQuaGiaoAn" style="margin-top:30px;"></div>
 
 </div>;
 }
@@ -248,7 +251,73 @@ html=`
 document.getElementById('page').innerHTML=html;
 
 }
+function taoGiaoAn(){
 
+document.getElementById("ketQuaGiaoAn").innerHTML = `
+
+<div class="card">
+
+<h1>GIÁO ÁN VẬT LÍ 10</h1>
+
+<h2>Bài: Chuyển động thẳng đều</h2>
+
+<hr>
+
+<h3>I. MỤC TIÊU</h3>
+
+<ul>
+<li>Nêu được khái niệm chuyển động thẳng đều.</li>
+<li>Vận dụng công thức tính quãng đường.</li>
+<li>Phát triển năng lực giải quyết vấn đề.</li>
+</ul>
+
+<h3>II. THIẾT BỊ DẠY HỌC</h3>
+
+<ul>
+<li>Máy chiếu.</li>
+<li>Máy tính.</li>
+<li>Video mô phỏng chuyển động.</li>
+</ul>
+
+<h3>III. TIẾN TRÌNH DẠY HỌC</h3>
+
+<p><b>Hoạt động 1: Khởi động</b></p>
+
+<p>
+Quan sát video chuyển động của xe đạp và trả lời câu hỏi.
+</p>
+
+<p><b>Hoạt động 2: Hình thành kiến thức</b></p>
+
+<p>
+Tìm hiểu khái niệm chuyển động thẳng đều.
+</p>
+
+<p><b>Hoạt động 3: Luyện tập</b></p>
+
+<p>
+Giải bài tập vận dụng.
+</p>
+
+<p><b>Hoạt động 4: Vận dụng</b></p>
+
+<p>
+Liên hệ thực tế giao thông địa phương.
+</p>
+
+<h3>IV. ĐÁNH GIÁ</h3>
+
+<ul>
+<li>Câu hỏi trắc nghiệm.</li>
+<li>Phiếu học tập.</li>
+<li>Đánh giá sản phẩm nhóm.</li>
+</ul>
+
+</div>
+
+`;
+
+}
 </script>
 
 </body>
