@@ -126,17 +126,17 @@ if(page==='lesson'){
 html=`
 <div class="card">
 
-<h1>📚 Soạn giáo án AI</h1>
+<h1>📚 Soạn giáo án AI theo CV 5512</h1>
 
 <p><b>Môn học</b></p>
-<select style="width:100%;padding:10px;margin-top:5px;">
+<select style="width:100%;padding:10px;">
 <option>Vật lí</option>
 </select>
 
 <br><br>
 
 <p><b>Lớp</b></p>
-<select style="width:100%;padding:10px;margin-top:5px;">
+<select style="width:100%;padding:10px;">
 <option>10</option>
 <option>11</option>
 <option>12</option>
@@ -145,7 +145,6 @@ html=`
 <br><br>
 
 <p><b>Tên bài học</b></p>
-
 <input
 type="text"
 placeholder="Ví dụ: Chuyển động thẳng đều"
@@ -154,11 +153,57 @@ style="width:100%;padding:10px;">
 <br><br>
 
 <p><b>Số tiết</b></p>
-
 <input
 type="number"
 value="1"
 style="width:100%;padding:10px;">
+
+<br><br>
+
+<p><b>Yêu cầu cần đạt</b></p>
+<textarea
+rows="4"
+style="width:100%;padding:10px;"
+placeholder="Nhập yêu cầu cần đạt của bài học">
+</textarea>
+
+<br><br>
+
+<p><b>Năng lực số tích hợp</b></p>
+
+<select style="width:100%;padding:10px;">
+
+<option>Không chọn</option>
+
+<option>Sử dụng thiết bị số</option>
+
+<option>Khai thác dữ liệu số</option>
+
+<option>Giao tiếp và hợp tác số</option>
+
+<option>Sáng tạo nội dung số</option>
+
+<option>An toàn số</option>
+
+<option>Giải quyết vấn đề bằng công nghệ số</option>
+
+</select>
+
+<br><br>
+
+<p><b>Công cụ AI sử dụng</b></p>
+
+<select style="width:100%;padding:10px;">
+
+<option>ChatGPT</option>
+
+<option>Gemini</option>
+
+<option>Copilot</option>
+
+<option>Canva AI</option>
+
+</select>
 
 <br><br>
 
@@ -173,7 +218,7 @@ cursor:pointer;">
 🚀 Tạo giáo án
 </button>
 
-</div>`;
+</div>;
 }
 
 if(page==='question'){
