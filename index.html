@@ -261,6 +261,29 @@ let mucTieu = `
 <li>Học sinh hiểu được kiến thức cơ bản của bài học.</li>
 <li>Vận dụng được kiến thức vào thực tiễn.</li>
 <li>Phát triển năng lực giải quyết vấn đề.</li>`;
+          if(tenBaiHoc.toLowerCase().includes("rơi tự do")){
+mucTieu = `
+<li>Mô tả được hiện tượng rơi tự do.</li>
+<li>Xác định được gia tốc rơi tự do.</li>
+<li>Vận dụng được công thức rơi tự do.</li>
+`;
+}
+
+if(tenBaiHoc.toLowerCase().includes("chuyển động tròn đều")){
+mucTieu = `
+<li>Nêu được đặc điểm của chuyển động tròn đều.</li>
+<li>Xác định được tốc độ góc.</li>
+<li>Vận dụng được các công thức của chuyển động tròn đều.</li>
+`;
+}
+
+if(tenBaiHoc.toLowerCase().includes("chuyển động thẳng đều")){
+mucTieu = `
+<li>Nêu được khái niệm chuyển động thẳng đều.</li>
+<li>Sử dụng được công thức tính quãng đường.</li>
+<li>Giải được các bài tập cơ bản.</li>
+`;
+}           
 document.getElementById("ketQuaGiaoAn").innerHTML = `
 
 <div class="card">
