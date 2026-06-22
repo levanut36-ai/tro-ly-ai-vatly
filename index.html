@@ -384,7 +384,37 @@ thietBi = `
 <li>Máy chiếu.</li>
 `;
 }
-document.getElementById("ketQuaGiaoAn").innerHTML = `
+if(tenBaiHoc.toLowerCase().includes("rơi tự do")){
+tienTrinh = `
+<p><b>Hoạt động 1: Khởi động</b></p>
+<p>Quan sát vật rơi từ các độ cao khác nhau.</p>
+
+<p><b>Hoạt động 2: Hình thành kiến thức</b></p>
+<p>Tìm hiểu khái niệm và gia tốc rơi tự do.</p>
+
+<p><b>Hoạt động 3: Luyện tập</b></p>
+<p>Giải bài tập về rơi tự do.</p>
+
+<p><b>Hoạt động 4: Vận dụng</b></p>
+<p>Liên hệ các hiện tượng trong đời sống.</p>
+`;
+}
+
+if(tenBaiHoc.toLowerCase().includes("chuyển động tròn đều")){
+tienTrinh = `
+<p><b>Hoạt động 1: Khởi động</b></p>
+<p>Quan sát bánh xe hoặc quạt đang quay.</p>
+
+<p><b>Hoạt động 2: Hình thành kiến thức</b></p>
+<p>Tìm hiểu tốc độ góc và chu kỳ.</p>
+
+<p><b>Hoạt động 3: Luyện tập</b></p>
+<p>Giải bài tập chuyển động tròn đều.</p>
+
+<p><b>Hoạt động 4: Vận dụng</b></p>
+<p>Liên hệ thực tế giao thông và sản xuất.</p>
+`;
+}document.getElementById("ketQuaGiaoAn").innerHTML = `
 
 <div class="card">
 
