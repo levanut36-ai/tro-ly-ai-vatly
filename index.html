@@ -246,7 +246,9 @@ html=`
 </div>`;
 }
 
-document.getElementById('page').innerHTML=html;
+document.getElementById('page').innerHTML=html;if(page==='lesson'){
+setTimeout(capNhatBaiHoc,100);
+}
 
 }
 function capNhatBaiHoc(){
