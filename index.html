@@ -258,18 +258,31 @@ let tenBaiHoc =
 document.getElementById("tenBaiHoc");
 
 if(lopHoc==="10"){
-tenBaiHoc.value = "Chuyển động thẳng đều";
+tenBaiHoc.innerHTML = `
+<option>Chuyển động thẳng đều</option>
+<option>Rơi tự do</option>
+<option>Chuyển động tròn đều</option>
+`;
 }
 
 if(lopHoc==="11"){
-tenBaiHoc.value = "Điện trường";
+tenBaiHoc.innerHTML = `
+<option>Điện trường</option>
+<option>Dòng điện không đổi</option>
+<option>Từ trường</option>
+`;
 }
 
 if(lopHoc==="12"){
-tenBaiHoc.value = "Dao động điều hòa";
+tenBaiHoc.innerHTML = `
+<option>Dao động điều hòa</option>
+<option>Sóng cơ</option>
+<option>Dòng điện xoay chiều</option>
+`;
 }
 
-}function taoGiaoAn(){let tenBaiHoc =
+}
+  function taoGiaoAn(){let tenBaiHoc =
 document.getElementById("tenBaiHoc").value;
 
 let soTiet =
