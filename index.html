@@ -251,7 +251,27 @@ html=`
 document.getElementById('page').innerHTML=html;
 
 }
-function taoGiaoAn(){let tenBaiHoc =
+function capNhatBaiHoc(){
+
+let lopHoc =
+document.getElementById("lopHoc").value;
+
+let tenBaiHoc =
+document.getElementById("tenBaiHoc");
+
+if(lopHoc==="10"){
+tenBaiHoc.value = "Chuyển động thẳng đều";
+}
+
+if(lopHoc==="11"){
+tenBaiHoc.value = "Điện trường";
+}
+
+if(lopHoc==="12"){
+tenBaiHoc.value = "Dao động điều hòa";
+}
+
+}function taoGiaoAn(){let tenBaiHoc =
 document.getElementById("tenBaiHoc").value;
 
 let soTiet =
