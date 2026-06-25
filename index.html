@@ -355,6 +355,15 @@ let noiDungAI = `
 let tienTrinh = `
 <p>Đang cập nhật...</p>
 `;
+ if(duLieuBaiHoc[tenBaiHoc]){
+
+mucTieu = duLieuBaiHoc[tenBaiHoc].mucTieu;
+
+thietBi = duLieuBaiHoc[tenBaiHoc].thietBi;
+
+tienTrinh = duLieuBaiHoc[tenBaiHoc].tienTrinh;
+
+}                      
 if(nangLucSo === "Sử dụng thiết bị số"){
 noiDungNLS = `
 <li>Học sinh sử dụng điện thoại hoặc máy tính để học tập.</li>
