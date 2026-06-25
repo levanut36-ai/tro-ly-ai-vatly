@@ -259,12 +259,20 @@ document.getElementById("lopHoc").value;
 let tenBaiHoc =
 document.getElementById("tenBaiHoc");
 
-if(lopHoc==="10"){
-tenBaiHoc.innerHTML = `
-<option>Chuyển động thẳng đều</option>
-<option>Rơi tự do</option>
-<option>Chuyển động tròn đều</option>
+let ds = danhSachBaiHoc[lopHoc];
+
+let html = "";
+
+for(let i=0;i<ds.length;i++){
+
+html += `
+<option>${ds[i]}</option>
 `;
+
+}
+
+tenBaiHoc.innerHTML = html;
+
 }
 
 if(lopHoc==="11"){
